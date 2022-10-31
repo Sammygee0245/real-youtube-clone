@@ -90,7 +90,7 @@ body {
 .ham {
   width: 30px;
   height: 30px;
-  background-image: url("/pics/hamburger-menu-5.png");
+  background-image: url("pics/hamburger-menu-5.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -114,7 +114,7 @@ body {
 .picture {
   width: 50px;
   height: 60px;
-  background-image: url("/pics/youtube logo.png");
+  background-image: url("pics/youtube logo.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -147,7 +147,7 @@ body {
   width: 50px;
   height: 37px;
   background-color: rgb(245, 245, 245);
-  background-image: url("/pics/find.svg");
+  background-image: url("pics/find.svg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -160,7 +160,7 @@ body {
 .mic {
   width: 30px;
   height: 30px;
-  background-image: url("/pics/mic icon.png");
+  background-image: url("pics/mic icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -176,7 +176,7 @@ body {
 .creat-v {
   width: 30px;
   height: 30px;
-  background-image: url("/pics/create video icon.png");
+  background-image: url("pics/create video icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -186,15 +186,19 @@ body {
 .noti {
   width: 20px;
   height: 30px;
-  background-image: url("/pics/notification icon.png");
+  background-image: url("pics/notification icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.pro-pic, .ssp, .webdp, .kpp, .fccp {
-  background-image: url("/pics/chp1.jpg");
+.pro-pic,
+.ssp,
+.webdp,
+.kpp,
+.fccp {
+  background-image: url("pics/chp1.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -226,14 +230,37 @@ body {
   border-bottom-color: rgb(231, 231, 231);
 }
 
-.hss, .srhs, .tmgs, .fkss, .lhywl {
+.hss,
+.srhs,
+.tmgs,
+.fkss,
+.lhywl {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
 }
 
-.home, .send-feed, .help, .report-h, .settings, .sport, .games, .music, .trending, .ssd, .webds, .kp, .fcc, .like-v, .watch-later, .your-v, .history, .libary, .sub, .short {
+.home,
+.send-feed,
+.help,
+.report-h,
+.settings,
+.sport,
+.games,
+.music,
+.trending,
+.ssd,
+.webds,
+.kp,
+.fcc,
+.like-v,
+.watch-later,
+.your-v,
+.history,
+.libary,
+.sub,
+.short {
   cursor: pointer;
   width: 90%;
   display: flex;
@@ -242,11 +269,26 @@ body {
   flex-direction: row;
 }
 
-.home-icon, .sendf-icon, .help-icon, .report-icon, .setting-icon, .sport-icon, .games-icon, .music-icon, .trend-icon, .like-icon, .watch-icon, .yourv-icon, .history-icon, .libary-icon, .sub-icon, .short-icon {
+.home-icon,
+.sendf-icon,
+.help-icon,
+.report-icon,
+.setting-icon,
+.sport-icon,
+.games-icon,
+.music-icon,
+.trend-icon,
+.like-icon,
+.watch-icon,
+.yourv-icon,
+.history-icon,
+.libary-icon,
+.sub-icon,
+.short-icon {
   cursor: pointer;
   width: 30px;
   height: 30px;
-  background-image: url("/pics/home icon.webp");
+  background-image: url("pics/home icon.webp");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -254,7 +296,7 @@ body {
 }
 
 .short-icon {
-  background-image: url("/pics/shotr video.png");
+  background-image: url("pics/shotr video.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -262,7 +304,7 @@ body {
 }
 
 .sub-icon {
-  background-image: url("/pics/subscription icon.png");
+  background-image: url("pics/subscription icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -270,7 +312,7 @@ body {
 }
 
 .libary-icon {
-  background-image: url("/pics/libary icon.png");
+  background-image: url("pics/libary icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -278,7 +320,7 @@ body {
 }
 
 .history-icon {
-  background-image: url("/pics/recent vid.png");
+  background-image: url("pics/recent vid.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -286,7 +328,7 @@ body {
 }
 
 .yourv-icon {
-  background-image: url("/pics/videosss.png");
+  background-image: url("pics/videosss.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -294,7 +336,7 @@ body {
 }
 
 .watch-icon {
-  background-image: url("/pics/watch-later-1781603-1513853.png");
+  background-image: url("pics/watch-later-1781603-1513853.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -302,7 +344,7 @@ body {
 }
 
 .like-icon {
-  background-image: url("/pics/20-200341_transparent-like-hand-png-like-png-png-download.png");
+  background-image: url("pics/20-200341_transparent-like-hand-png-like-png-png-download.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -310,7 +352,7 @@ body {
 }
 
 .trend-icon {
-  background-image: url("/pics/trnding icon.png");
+  background-image: url("pics/trnding icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -318,7 +360,7 @@ body {
 }
 
 .music-icon {
-  background-image: url("/pics/music icon.png");
+  background-image: url("pics/music icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -326,7 +368,7 @@ body {
 }
 
 .games-icon {
-  background-image: url("/pics/gamming icon.png");
+  background-image: url("pics/gamming icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -334,7 +376,7 @@ body {
 }
 
 .sport-icon {
-  background-image: url("/pics/sport icon.png");
+  background-image: url("pics/sport icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -342,7 +384,7 @@ body {
 }
 
 .setting-icon {
-  background-image: url("/pics/setting icon.png");
+  background-image: url("pics/setting icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -350,7 +392,7 @@ body {
 }
 
 .report-icon {
-  background-image: url("/pics/flag icon.png");
+  background-image: url("pics/flag icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -358,7 +400,7 @@ body {
 }
 
 .help-icon {
-  background-image: url("/pics/help.png");
+  background-image: url("pics/help.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -366,7 +408,7 @@ body {
 }
 
 .sendf-icon {
-  background-image: url("/pics/feedback icon.png");
+  background-image: url("pics/feedback icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -383,10 +425,13 @@ body {
   background-color: #fff;
 }
 
-.hme-icon, .lbry-icon, .subscrip-icon, .shrts-icon {
+.hme-icon,
+.lbry-icon,
+.subscrip-icon,
+.shrts-icon {
   width: 30px;
   height: 30px;
-  background-image: url("/pics/home icon.webp");
+  background-image: url("pics/home icon.webp");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -394,7 +439,7 @@ body {
 }
 
 .shrts-icon {
-  background-image: url("/pics/shotr video.png");
+  background-image: url("pics/shotr video.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -402,7 +447,7 @@ body {
 }
 
 .subscrip-icon {
-  background-image: url("/pics/subscription icon.png");
+  background-image: url("pics/subscription icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -410,7 +455,7 @@ body {
 }
 
 .lbry-icon {
-  background-image: url("/pics/libary icon.png");
+  background-image: url("pics/libary icon.png");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -443,7 +488,7 @@ body {
   width: 100%;
   height: 152px;
   border-radius: 8px;
-  background-image: url("/pics/vp1.webp");
+  background-image: url("pics/vp1.webp");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -485,7 +530,7 @@ body {
 }
 
 .chp-1 {
-  background-image: url("/pics/chp1.jpg");
+  background-image: url("pics/chp1.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
@@ -562,7 +607,7 @@ body {
     width: 100%;
     height: 260px;
     border-radius: 8px;
-    background-image: url("/pics/vp1.webp");
+    background-image: url("pics/vp1.webp");
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center;
@@ -602,4 +647,4 @@ body {
   .bottom {
     display: none;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
