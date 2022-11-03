@@ -17,12 +17,72 @@
   border-radius: 20px;
 }
 
+html {
+  width: 100%;
+}
+
 body {
-  width: 100vw;
-  background-color: black;
+  width: 100%;
+  background-color: rgb(17, 17, 17);
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+}
+
+.srch {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(59, 59, 59, 0.945);
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  justify-content: center;
+}
+
+.srch-div {
+  display: flex;
+  width: 80%;
+  height: 40px;
+  background-color: rgb(218, 218, 218);
+  border-radius: 20px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  width: 80%;
+  height: 39px;
+  outline: none;
+  border: 1px solid transparent;
+  background-color: rgb(218, 218, 218);
+  border-radius: 20px;
+}
+
+.car {
+  position: absolute;
+  left: 10px;
+  top: 13px;
+  font-size: 25px;
+}
+
+.main-search {
+  width: 10px;
+  color: black;
+  position: relative;
+}
+
+.main-search::before {
+  width: 30px;
+  color: black;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  font-size: 20px;
 }
 
 .nav-top {
@@ -30,7 +90,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: 110px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(17, 17, 17);
   position: fixed;
   left: 0;
   top: 0;
@@ -39,12 +99,12 @@ body {
 .top {
   width: 100%;
   height: 70px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(17, 17, 17);
   position: fixed;
   left: 0;
   top: 0;
   border: 1px solid transparent;
-  border-bottom-color: rgb(0, 0, 0);
+  border-bottom-color: rgb(17, 17, 17);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,12 +114,12 @@ body {
 .bottom {
   width: 83%;
   height: 50px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(17, 17, 17);
   position: fixed;
   left: 250px;
   top: 60px;
   border: 1px solid transparent;
-  border-bottom-color: rgb(0, 0, 0);
+  border-bottom-color: rgb(17, 17, 17);
   display: flex;
   align-items: center;
   justify-content: left;
@@ -144,7 +204,7 @@ body {
   border: 1px solid;
   border-top-left-radius: 17px;
   border-bottom-left-radius: 17px;
-  background-color: black;
+  background-color: rgb(17, 17, 17);
   color: white;
   outline: none;
 }
@@ -152,7 +212,7 @@ body {
 .fa-search {
   position: relative;
   width: 50px;
-  background-color: rgb(219, 219, 219);
+  background-color: rgba(219, 219, 219, 0.904);
   border-top-right-radius: 17px;
   border-bottom-right-radius: 17px;
 }
@@ -228,7 +288,7 @@ body {
   position: fixed;
   top: 70px;
   bottom: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(17, 17, 17);
   overflow-y: scroll;
   z-index: 2;
 }
@@ -239,7 +299,7 @@ body {
   width: 200px;
   min-height: 300px;
   border: 1px solid transparent;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(17, 17, 17);
   border-bottom-color: rgb(43, 42, 42);
 }
 
@@ -323,7 +383,7 @@ body {
   position: fixed;
   top: 69px;
   bottom: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(17, 17, 17);
 }
 
 .grid-frame {
@@ -344,6 +404,8 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .video-div-1 {
@@ -409,6 +471,10 @@ body {
   font-size: 13px;
 }
 
+.videoAuthr {
+  color: white;
+}
+
 @media (max-width: 1247px) {
   .grid-frame {
     display: grid;
@@ -463,10 +529,14 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
-    place-content: center;
+    place-self: center;
+    margin: 0;
+    margin-top: 122px;
+    width: 100%;
+    grid-row-gap: 2px;
   }
   .frame {
-    width: 95%;
+    width: 100%;
     height: 370px;
     display: flex;
     align-items: center;
@@ -518,7 +588,9 @@ body {
     margin-right: 36px;
   }
   .bottom {
-    display: flex;
+    width: 83%;
+    height: 50px;
+    left: 12px;
   }
 
   .container-lg {
