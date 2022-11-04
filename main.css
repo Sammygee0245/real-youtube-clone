@@ -583,6 +583,13 @@ body {
     width: 95%;
     height: 150px;
   }
+
+  .titlee {
+    width: 100%;
+    display: flex;
+    margin-right: 3rem;
+  }
+
   .tlchp-1 {
     width: 100%;
     display: grid;
