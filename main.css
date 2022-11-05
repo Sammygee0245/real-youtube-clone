@@ -493,13 +493,13 @@ body {
 .videoAuthr-1 {
   color: rgb(100, 100, 100);
   font-size: 13px;
+  display: none;
 }
 
 .videoAuthr {
-  color: white;
-  font-size: 15px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
+  color: rgb(100, 100, 100);
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
 
 @media (max-width: 1247px) {
   .grid-frame {
