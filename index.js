@@ -187,7 +187,7 @@ mainsearch.addEventListener("click", () => {
       let response = await fetch(
         "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=" +
           searchItem +
-          "&type=video&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=35"
+          "&type=video&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=1"
       );
       let youtubedata = await response.json();
 
@@ -216,7 +216,7 @@ mainsearch.addEventListener("click", () => {
       let channepic = await fetch(
         "https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=" +
           chanelid +
-          "&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=25"
+          "&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=1"
       );
 
       let channelp = await channepic.json();
@@ -599,7 +599,7 @@ async function youtube() {
   let chanelpic24 = document.querySelector(".chp-24");
 
   let response = await fetch(
-    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=cat&type=video&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=35"
+    "https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=cat&type=video&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=1"
   );
   let youtubedata = await response.json();
 
@@ -629,7 +629,7 @@ async function youtube() {
   let channepic = await fetch(
     "https://youtube.googleapis.com/youtube/v3/channels?part=snippet&id=" +
       chanelid +
-      "&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=25"
+      "&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=1"
   );
 
   let channelp = await channepic.json();
