@@ -40,24 +40,24 @@ async function youtube() {
   console.log(vid)
 
 
-if(vid.length !== 0){
-  videoContainer.innerHTML = vid.map((x)=>{
-      let {snippet,id} = x
-      return ( `
-    <a href=${"https://www.youtube.com/watch?v="+id.videoId} class="video">
-           <img width="100%" height="50%" src=${snippet.thumbnails.medium.url} alt="">
-          <div class="video-details">
-              <img class="channel-pic" src=${snippet.thumbnails.medium.url} alt="">
-              <div class="vidoe-prev-info">
-                   <p class="vidTitile">${snippet.title}</p>
-                   <p class="channel-name">${snippet.channelTitle}</p>
-              </div>
-          </div>
-    </a>
-    `)
-  }).join("")
-}
-
+  if(vid.length !== 0){
+    videoContainer.innerHTML = vid.map((x)=>{
+        let {snippet,id} = x
+        return ( `
+      <a href=${"https://www.youtube.com/watch?v="+id.videoId} class="video">
+            <img width="100%" height="50%" src=${snippet.thumbnails.medium.url} alt="">
+            <div class="video-details">
+                <img class="channel-pic" src=${snippet.thumbnails.medium.url} alt="">
+                <div class="vidoe-prev-info">
+                    <p class="vidTitile">${snippet.title}</p>
+                    <p class="channel-name">${snippet.channelTitle}</p>
+                </div>
+            </div>
+      </a>
+      `)
+    }).join("")
+    videoContainer.style.backgroundColor = "rgb(22, 22, 22)"
+  }else{} 
 }
 
 youtube();

@@ -31,7 +31,7 @@ body {
 }
 
 .pre {
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -44,10 +44,10 @@ body {
 }
 
 .load {
-  width: 300px;
-  height: 260px;
+  width: 250px;
+  height: 160px;
   background-image: url("pics/youtube logo.png");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -407,8 +407,8 @@ body {
 
 .video-cointainer{
   width: 100vw;
-  height: 100vh;
-  padding: 140px 70px;
+  height: 100%;
+  padding: 140px 70px 0 70px;
   display: grid;grid-template-columns: repeat(4,300px);
   gap: 20px;
 }
@@ -425,6 +425,33 @@ body {
   object-fit: cover;
 }
 
+.img,.small,.tit,.ch{
+  width: 300px;
+  height: 150px;
+  background-color: rgb(114, 113, 113);
+  animation: toleft 3s infinite alternate;
+}
+
+.tit,.ch{
+  width: 200px;
+  height: 10px;
+}
+
+.small{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+@keyframes toleft{
+  from{
+    background-color: rgb(85, 85, 85);
+  }
+  to{
+    background-color: rgb(37, 36, 36);;
+  }
+}
+
 .video-details{
   width: 100%;
   display: flex;
@@ -435,7 +462,7 @@ justify-content: space-between;
 .channel-pic{
   width: 45px;
   height: 45px;
-  background-color: blue;
+  background-color: rgb(61, 61, 66);
   border-radius: 50%;
   object-fit: cover;
 }
@@ -456,35 +483,34 @@ justify-content: space-between;
 
 .error{
   width: 100vw;
-  height: 100vh;
-  padding: 140px 70px;
-  background-color: aliceblue;
+  height: 100%;
+  padding: 140px 70px 0 70px;
+  display: grid;grid-template-columns: repeat(4,300px);
+  gap: 20px;
+  background-color: rgb(15, 15, 15);
   position: fixed;
-  top: 0;
+  top: 4;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  display:none;
+  z-index: -1;
+  overflow-y: scroll;
 }
 
 @media (max-width: 1346px){
-  .video-cointainer{
+  .video-cointainer,.error{
     justify-content: center;
     display: grid;grid-template-columns: repeat(3,300px);
   }
 } 
 
 @media (max-width: 1092px){
-  .video-cointainer{
+  .video-cointainer,.error{
     justify-content: center;
     display: grid;grid-template-columns: repeat(2,400px);
   }
 } 
 
 @media (max-width: 851px){
-  .video-cointainer{
+  .video-cointainer,.error{
     padding: 140px 0;
     justify-content: center;
     display: grid;grid-template-columns: repeat(1,300px);
