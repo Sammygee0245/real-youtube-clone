@@ -39,7 +39,7 @@ async function tube(){
   let search = document.querySelector("#search-stuff").value
   console.log(search)
 
-  let response = await fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="+search+"&type=video&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=24")
+  let response = await fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&q="+search+"&type=video&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=54")
   let data = await response.json()
   let vid = data.items
   console.log(vid)
@@ -71,7 +71,7 @@ async function tube(){
 //fetch api
 
 async function youtube() {
-  let response = await fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=cats&type=video&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=24")
+  let response = await fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=frontendwebdevelopment&type=video&key=AIzaSyCk7xTmPnD7dEgi7j2S2d8xNeWCgi9CqCI&maxResults=54")
   let data = await response.json()
   let vid = data.items
   console.log(vid)
